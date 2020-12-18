@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Take Your Screenshot</title>
+    <!-- CSS only -->
+
+    <link rel="stylesheet" href="style.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand atext" href="#">
+        <img src="logo-dark-resized.png" alt=""  class="d-inline-block align-top logo">
+        Screenshot App 
+        <div class="social">
+            <a href="https://github.com/prashikdewtale10/Website_Screenshot_app"><i class="fab fa-github-square"></i></a>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-instagram-square"></i>
+        </div>
+      </a>
+    </div>
+  </nav>
+    <div class="container cont">
+        <div class="card mt-3 " style="width: 700px;">
+            <div class="card-header text">
+              <img src="logo-dark-resized.png" alt="" > Take Your Screenshot 
+            </div>
+            <div class="card-body">
+                <form class="form-control fo" method="POST" action='/add'>
+                    <div class="url">
+                        <label for="Url">URL</label>
+                        <input type="text" name="url" id="url" placeholder="Enter website ..." class=" max-width: 100%;">
+                    </div>
+
+                    <div class="wh">
+                        <label for="resolution">Browser Resolution</label>
+                        <div class="">
+                            <input type="text" name="width" id="width" placeholder="width"> 
+                            <input type="text" name="height" id="height" placeholder="height">
+                        </div>
+                    </div>  
+
+                     <div class="options">
+                        <label for="options">Options</label>
+                        <div class="opt">
+                            <input type="checkbox" name="full" id="full">
+                            <label for="fullwidth">Full Screenshot</label>
+                            <input type="checkbox" name="fresh" id="fresh">
+                            <label for="fresh">fresh Screenshot</label>
+                        </div>
+
+                     </div>
+                      <div class="btns">
+                          <button type="submit">Take Screenshot</button>
+                        
+                      </div>
+                </form>
+            </div>
+          </div>
+    </div>
+</body>
+</html>
