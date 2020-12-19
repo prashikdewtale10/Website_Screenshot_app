@@ -32,7 +32,7 @@ app.post('/add',(req,res)=>{
     }
 
 // The parameters.
-var token = 'TUF6W3AOIQWDP68I3C0LCGWSYGOBBMA3';
+var token = 'YOUR_TOKEN_PROVIDED_BY_API';
 var url = encodeURIComponent(req.body.url);
 var width = req.body.width;
 var height = req.body.width;
